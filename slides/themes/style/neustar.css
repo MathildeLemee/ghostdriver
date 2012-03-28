@@ -31,6 +31,8 @@
       border-color: #ccc; }
     .deck-container .slide code {
       color: #888888; }
+    .deck-container .slide p, .deck-container .slide li {
+      font-size: 1.2em; }
     .deck-container .slide blockquote {
       font-size: 2em;
       font-style: italic;

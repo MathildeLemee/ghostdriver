@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./extensions/navigation/deck.navigation.css">
     <link rel="stylesheet" href="./extensions/status/deck.status.css">
     <link rel="stylesheet" href="./extensions/hash/deck.hash.css">
+    <link rel="stylesheet" href="./extensions/codemirror/deck.codemirror.css">
+    <link rel="stylesheet" href="./extensions/codemirror/themes/default.css">
 
     <!-- Style theme. More available in /themes/style/ or create your own. -->
     <link rel="stylesheet" href="./themes/style/neustar.css">
@@ -46,158 +48,173 @@
 <!--2-->
 <section class="slide" id="who-am-i">
   <h2>Who is Ivan De Marino?</h2>
-  <ol>
+  <ul>
       <li>
-          <h3>I'm a Senior Engineer at Neustar</h3>
-          <p>I lead the development for the Webmetrics Agent</p>
+          <h3>Senior Engineer at Neustar</h3>
+          I lead the development for the Webmetrics Agent
       </li>
       <li>
-          <h3>(Main) contributor to PhantomJS</h3>
-          <p>I worked on many things, and contributed stuff like the <strong>Filesystem API</strong> and recently the new <strong>REPL mode</strong></p>
+          <h3>(Main) contributor to <a href="http://phantomjs.org">PhantomJS</a></h3>
+          I worked on many things, and contributed stuff like the <strong>Filesystem API</strong> and recently the new <strong>REPL mode</strong>
       </li>
       <li>
-          <h3>Few months that I started using intensively Selenium</h3>
-          <p>So, <em>go easy on me</em> ;-)</p>
-      </li>
-      <li>
-          <h3>I mostly spend my time (coding)</h3>
+          <h3>Spend lots of my time</h3>
           <ul>
-            <li><code><a href="http://github.com/detro">github.detro</a> = ivan.convert(italianEspresso || starbucksEspresso);</code></li>
-            <li><code><a href="http://twitter.com/detronizator">twitter.detronizator</a> = ivan.randomRanting(news || humor || experience || software || {});</code></li>
-            <li><code>food.italian = ivan.cook(recipe || randomIngredients);</code></li>
-            <li><code>performance.low = detro.cycle(veryGoodBike, veryGoodGears);</code></li>
+            <li><code><a href="http://github.com/detro">github.detro</a> = ivan.convert(italian_espresso || starbucks_espresso);</code></li>
+            <li><code><a href="http://twitter.com/detronizator">twitter.detronizator</a> = ivan.random_ranting(news || humor || experience || software || {});</code></li>
+            <li><code>food.italian = ivan.cook(recipe || random_ingredients);</code></li>
+            <li><code>detro.cycle(good_bike, good_gears).performance < semi_pro_cyclist(crap_bike, crap_gears).performance;</code></li>
           </ul>
       </li>
-  </ol>
+      <li>
+          <h3>Few months that I started using Selenium</h3>
+          So, <em>go easy on me</em> ;-)
+      </li>
+  </ul>
 </section>
 
 <!--3-->
-<section class="slide" id="agent-team">
+<section class="slide" id="webmetrics-agent">
   <h2>Webmetrics Agent</h2>
-  <p>My team is responsible for the <strong>(Super) Agent</strong>:</p>
+  My team is responsible for the <strong>(Super) Agent</strong>:
   <ul>
-    <li>Back-end service running on every EC2 location, plus other cloud hosting services</li>
-    <li>Executes Customer Tests, leveraging Selenium and other projects</li>
-    <li>Tests are written in Javascript + custom API mixed with a Javascript-to-Selenium bridge</li>
-    <li>Reports about it</li>
+    <li>Service that executes Customer Tests, leveraging Selenium and other projects</li>
+    <li>Back-end component running on EC2, Rackspace, Voxel, ...</li>
+    <li>Tests written in Javascript</li>
+    <li>Custom API mixed with Javascript-to-Selenium bridge</li>
+    <li>Test Execution Speed is <strong>key</strong>: some customer scripts require <u>minutes</u> to run!</li>
   </ul>
-  <p><strong>We are Hiring!</strong></p>
+  <h3 class="slide" id="webmetrics-agent-hiring">We are Hiring!</h3>
 </section>
 
-
-
-
-
-
-
-
-<section class="slide" id="markup">
-    <h2>The Markup</h2>
-    <p>Slides are just HTML elements with a class of <code>slide</code>.</p>
-    <pre><code>&lt;section class=&quot;slide&quot;&gt;
-   &lt;h2&gt;How to Make a Deck&lt;/h2&gt;
-   &lt;ol&gt;
-      &lt;li&gt;
-         &lt;h3&gt;Write Slides&lt;/h3&gt;
-         &lt;p&gt;Slide content is simple HTML.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-         &lt;h3&gt;Choose Themes&lt;/h3&gt;
-         &lt;p&gt;One for slide styles and one for deck transitions.&lt;/p&gt;
-      &lt;/li&gt;
-      &hellip;
-   &lt;/ol&gt;
-&lt;/section&gt;</code></pre>
+<!--4-->
+<section class="slide" id"phantomjs-intro">
+  <h1>
+    <img src="images/phantomjs-wordle.png" alt="PhantomJS logo" />
+    <br />
+    <span class="by"><a href="http://www.wordle.net">via Wordle</a></span>
+  </h1>
 </section>
 
-<section class="slide" id="themes">
-    <h2>Style Themes</h2>
-    <p>Customizes the colors, typography, and layout of slide&nbsp;content.</p>
-    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/style-theme.css&quot;&gt;</code></pre>
-    <h2>Transition Themes</h2>
-    <p>Defines transitions between slides using CSS3 transitions.  Less capable browsers fall back to cutaways. But <strong>you</strong> aren&rsquo;t using <em>those</em> browsers to give your presentations, are&nbsp;you&hellip;</p>
-    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/transition-theme.css&quot;&gt;</code></pre>
+<!--5-->
+<section class="slide" id="phantomjs">
+  <h2>PhantomJS: What's all the fuss about?</h2>
+  <p>
+    <img style="float: right;" src="images/phantomjs-wordle.png" width="600" alt="PhantomJS logo" />
+  </p>
+  <ul>
+    <li><h3>Headless (Qt)WebKit</h3></li>
+    <li><h3>JavaScript-driven: <strong>high hackability</strong></h3></li>
+    <li><h3>Ideal for Testing</h3></li>
+    <li>
+      <h3>Momentum</h3>
+      <ul>
+        <li>Great Contributors</li>
+        <li>Users and Feedbacks</li>
+        <li>Regular Releases</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Integration</h3>
+      <ul>
+        <li>Poltergeist for Capybara, by Jon Leighton (<a href="https://github.com/jonleighton/poltergeist">github/poltergeist</a>)</li>
+        <li>CasperJS, by Nicolas Perriault (<a href="http://casperjs.org/">casperjs.org</a>)</li>
+        <li>PhantomJS YUI Test, by Liam Clancy (<a href="https://github.com/metafeather/phantomjs-yuitest">github/phantomjs-yuitest</a>)
+        <li>Many other (<a href="http://code.google.com/p/phantomjs/wiki/WhoUsesPhantomJS">the full list</a>)
+      </ul>
+    </li>
+  </ul>
 </section>
 
-<section class="slide" id="extensions">
-    <h2>Extensions</h2>
-    <p>Core gives you basic slide functionality with left and right arrow navigation, but you may want more. Here are the ones included in this&nbsp;deck:</p>
-
-    <ul>
-        <li class="slide" id="extensions-goto">
-            <strong>deck.goto</strong>: Adds a shortcut key to jump to any slide number.  Hit g, type in the slide number, and hit&nbsp;enter.
-        </li>
-
-        <li class="slide" id="extensions-hash">
-            <strong>deck.hash</strong>: Enables internal linking within slides, deep linking to individual slides, and updates the address bar &amp; a permalink anchor with each slide&nbsp;change.
-        </li>
-
-        <li class="slide" id="extensions-menu">
-            <strong>deck.menu</strong>: Adds a menu view, letting you see all slides in a grid. Hit m to toggle to menu view, continue navigating your deck, and hit m to return to normal view. Touch devices can double-tap the deck to switch between&nbsp;views.
-        </li>
-
-        <li class="slide" id="extensions-navigation">
-            <strong>deck.navigation</strong>: Adds clickable left and right buttons for the less keyboard&nbsp;inclined.
-        </li>
-
-        <li class="slide" id="extensions-status">
-            <strong>deck.status</strong>: Adds a page number indicator. (current/total)
-        </li>
-    </ul>
-
-    <p class="slide" id="extension-folders">Each extension folder in the download package contains the necessary JavaScript, CSS, and HTML&nbsp;files. For a complete list of extension modules included in deck.js, check out the&nbsp;<a href="http://imakewebthings.github.com/deck.js/docs">documentation</a>.</p>
+<!--6-->
+<section class="slide" id="phantomjs-flexible-intro">
+  <h1>FlExIbLe</h1>
 </section>
 
-<section class="slide" id="nested">
-    <h2>Nested Slides</h2>
-    <p>That last slide had a few steps.  To create substeps in slides, just nest them:</p>
-    <pre><code>&lt;section class=&quot;slide&quot;&gt;
-  &lt;h2&gt;Extensions&lt;/h2&gt;
-  &lt;p&gt;Core gives you basic slide functionality...&lt;/p&gt;
-  &lt;ul&gt;
-     &lt;li class=&quot;slide&quot;&gt;
-        &lt;h3&gt;deck.goto&lt;/h3&gt;
-        &lt;p&gt;Adds a shortcut key to jump to any slide number...&lt;/p&gt;
-     &lt;/li&gt;
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</code></pre>
+<!--7-->
+<section class="slide" id="phantomjs-flexible">
+  <h2>PhantomJS is flexible</h2>
+  <p>
+    <div>
+    <div class="code" mode="javascript" style="display: none;">var page = require('webpage').create(),
+    server = require('webserver').create(),
+    port = 8080;
+
+// Launch Server
+server.listen(port, function (request, response) {
+    console.log(JSON.stringify(request, null, 2));
+    response.statusCode = 200;
+    response.headers = {"Cache": "no-cache", "Content-Type": "text/html"};
+    response.write("<html><head><title>Hello World!</title></head>");
+    response.close();
+});
+
+// Connect to Server
+page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (status) {
+    if (status === 'success') {
+        console.log(page.content);
+    }
+    phantom.exit();
+});</div>
+    </div>
+  </p>
 </section>
 
-<section class="slide" id="elements-images">
-    <h2>Other Elements: Images</h2>
-    <img src="http://placekitten.com/600/375" alt="Kitties">
-    <pre><code>&lt;img src=&quot;http://placekitten.com/600/375&quot; alt=&quot;Kitties&quot;&gt;</code></pre>
+<!--8-->
+<section class="slide" id="phantomjs-fast-intro">
+  <h1>
+    <img src="./images/phantom-ray.jpg" />
+    <br />
+    <span class="by">Prototype Boeing Phantom Ray [<a href="http://en.wikipedia.org/wiki/File:Phantom_ray_rollout.jpg">via Wikipedia</a>]</span>
+  </h1>
 </section>
 
-<section class="slide" id="elements-blockquotes">
-    <h2>Other Elements: Blockquotes</h2>
-    <blockquote cite="http://example.org">
-        <p>Food is an important part of a balanced diet.</p>
-        <p><cite>Fran Lebowitz</cite></p>
-    </blockquote>
-    <pre><code>&lt;blockquote cite=&quot;http://example.org&quot;&gt;
-  &lt;p&gt;Food is an important part of a balanced diet.&lt;/p&gt;
-  &lt;p&gt;&lt;cite&gt;Fran Lebowitz&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</code></pre>
+<!--9-->
+<section class="slide" id="phantomjs-fast">
+  <h2>PhantomJS aims at being fast</h2>
+  <ul>
+    <li><h3>Written in (good) Qt C++</h3></li>
+    <li><h3><code>no_UI === no_Drawing === low_memory_and_CPU_footprint</code></h3></li>
+    <li><h3>Very easy to get started (that's speed too!!!)</h3></li>
+    <li><h3>Whole test suite in ~2s on my 4yy old iMac</h3></li>
+    <li><h3>Maybe V8 in the future (depends on QtWebKit)</h3></li>
+  </ul>
 </section>
 
-
-<section class="slide" id="elements-videos">
-    <h2>Other Elements: Video Embeds</h2>
-    <p>Embed videos from your favorite online video service or with an HTML5 video&nbsp;element.</p>
-
-    <iframe src="http://player.vimeo.com/video/1063136?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0"></iframe>
-
-    <pre><code>&lt;iframe src=&quot;http://player.vimeo.com/video/1063136?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;400&quot; height=&quot;225&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</code></pre>
+<!--10-->
+<section class="slide" id="question-value-time">
+  <h1>
+    How much do you <em>value</em> your time?
+    <br />
+    <img src="./images/busy-life.jpg" height="300"/>
+    <span class="by">Busy Life, Bloor Street [<a href="http://www.torontosnaps.com/Monuments-and-sculptures/busy-life-11508.html">via</a>]</span>
+  </h1>
 </section>
 
-<section class="slide" id="digging-deeper">
-    <h2>Digging Deeper</h2>
-    <p>If you want to learn about making your own themes, extending deck.js, and more, check out the&nbsp;<a href="./docs/">documentation</a>.</p>
+<!--11-->
+<section class="slide" id="time-taken">
+  <h1>
+    <math>
+      <mrow>
+        <mi>Time to do Stuff</mi>
+        <mi>=</mi>
+        <mfrac>
+          <mrow>Stuff done</mrow>
+          <mrow>Speed of execution</mrow>
+        </mfrac>
+      </mrow>
+    </math>
+  </h1>
 </section>
+
+<!--12-->
+<section class="slide" id="need-for-speed">
+  <h1>
+    So, what we need is <em>SPEED</em>!
+  </h1>
+</section>
+
+<!-- ================================================================= END OF SLIDES -->
 
 <!-- deck.navigation snippet -->
 <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
@@ -233,6 +250,10 @@
 <script src="./extensions/goto/deck.goto.js"></script>
 <script src="./extensions/status/deck.status.js"></script>
 <script src="./extensions/navigation/deck.navigation.js"></script>
+<!-- Base codemiror code -->
+<script src="./extensions/codemirror/codemirror.js"></script>
+<script src="./extensions/codemirror/mode/javascript/javascript.js"></script>
+<script src="./extensions/codemirror/deck.codemirror.js"></script>
 
 <!-- Initialize the deck -->
 <script>
