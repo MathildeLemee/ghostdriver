@@ -7,10 +7,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Getting Started with deck.js</title>
+    <title>Speed Up Your Selenium Tests with PhantomJS</title>
 
-    <meta name="description" content="A jQuery library for modern HTML presentations">
-    <meta name="author" content="Caleb Troughton">
+    <meta name="description" content="Selenium Conference 2012 - GhostDriver: the glue between Selenium and PhantomJS">
+    <meta name="author" content="Ivan De Marino">
     <meta name="viewport" content="width=1024, user-scalable=no">
 
     <!-- Core and extension CSS files -->
@@ -33,10 +33,14 @@
 </head>
 
 <body class="deck-container">
+  <div class="github-ribbon-container">
+    <a href="http://github.com/detro/ghostdriver">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
+  </div>
 
 <!-- Begin slides -->
 <!--1-->
-<section class="slide" id="title-slide">
+<section class="slide" id="title">
   <h1>Speed Up Your Selenium Tests with PhantomJS
     <br/>
     <span class="by">Ivan De Marino - Senior Software Engineer / Neustar, Inc.</span>
@@ -85,7 +89,7 @@
     <li>Custom API mixed with Javascript-to-Selenium bridge</li>
     <li>Test Execution Speed is <strong>key</strong>: some customer scripts require <u>minutes</u> to run!</li>
   </ul>
-  <h3 class="slide" id="webmetrics-agent-hiring"><strong>We are Hiring!</strong></h3>
+  <h3 class="slide" id="webmetrics-agent-hiring"><strong>We are Hiring!!!</strong></h3>
 </section>
 
 <!--4-->
@@ -160,7 +164,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
     </div>
   </p>
   <p>
-    Every party in HTTP communication is at hand
+    (Almost) every party in HTTP communication is at hand!
   </p>
 </section>
 
@@ -200,7 +204,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 <section class="slide" id="time-taken">
   <h2>Time is usually interpreted as:</h2>
   <h1>
-    <math style="font-size: 1.3em;">
+    <math style="font-size: 1.1em;">
       <mrow>
         <mi>Time</mi>
         <mo>=</mo>
@@ -315,8 +319,9 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 
 <!--16-->
 <section class="slide" id="not-good-for-coding-turnaround">
+  TODO
   <h1>
-    Xs<br/> good <em>overnight tests</em> :)<br/> not so good <em>coding turnaround</em> :(
+    Xs<br/> is good <em>overnight tests</em>,<br/> but not so good <em>coding turnaround</em>
   </h1>
 </section>
 
@@ -376,6 +381,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 }</div>
     </div>
   </p>
+  TODO
   <p>
     <div class="slide" id="ghostdriver-google-cheese-test-timings">
       <div class="sidenote">
@@ -408,6 +414,61 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 <section class="slide" id="ghostdriver-architecture">
   <h1>
     <img src="./images/ghostdriver-architecture.png" />
+  </h1>
+</section>
+
+<!--23-->
+<section class="slide" id="ghostdriver-pros-and-cons">
+  <h2>GhostDriver: Pros & Cons</h2>
+  <h3>Pros</h3>
+  <ul>
+    <li>Fast Test Results => Faster Coding Turnaround</li>
+    <li>Easy Setup: store it in your Repo
+      <ul>
+        <li>PhantomJS ~10/15Mb</li>
+        <li>GhostDriver ~0.2Mb</li>
+      </ul>
+    </li>
+    <li>Hackable and Tunable (JavaScript / C++)</li>
+    <li>Multiple Sessions without a glitch</li>
+  </ul>
+  <h3>Cons</h3>
+  <ul>
+    <li>PhantomJS ~= Real Browser</li>
+    <li>Only 13 of of 95 Wire Protocol Commands implemented (13.68%)</li>
+  </ul>
+</section>
+
+<!--24-->
+<section class="slide" id="ghostdriver-project-status">
+  <h2>GhostDriver: Project Status</h2>
+  <ul>
+    <li>Not ready for production</li>
+    <li>Project just started (<strong>only 1 week</strong> of solid coding)</li>
+    <li>Help! FORK and HACK with me</li>
+    <li>Neustar Webmetrics will offer it</li>
+    <li>Imporant items in the TODO list:
+      <ul>
+        <li>Multiple Frames per Window</li>
+        <li>Proxy</li>
+        <li>Screenshot</li>
+        <li>Capabilities negotiation</li>
+        <li>Tailored (Java) Bindings</li>
+        <li>100% Wire Protocol Commands</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<!--25-->
+<section class="slide" id="q-and-a">
+  <h1>
+    Thanks!<br/> Questions?
+    <br />
+    <span class="by">
+      <a href="http://github.com/detro/ghostdriver">http://github.com/detro/ghostdriver</a> -
+      <a href="http://github.com/ariya/phantomjs">http://github.com/ariya/phantomjs</a>
+    </span>
   </h1>
 </section>
 

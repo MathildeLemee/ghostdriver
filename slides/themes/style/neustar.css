@@ -6,6 +6,14 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom left; }
+  .deck-container .github-ribbon-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    border: 0; }
   .deck-container .slide {
     background: transparent; }
     .deck-container .slide h1 {
@@ -36,7 +44,7 @@
       color: #888888; }
     .deck-container .slide > ul, .deck-container .slide > p ul {
       font-size: 1.2em;
-      line-height: 1.7; }
+      line-height: 1.4; }
     .deck-container .slide blockquote {
       font-size: 2em;
       font-style: italic;
@@ -90,3 +98,12 @@
     background: #eee; }
   .deck-container.deck-menu .deck-current, .no-touch .deck-container.deck-menu .slide:hover {
     background: #ddf; }
+
+@media print {
+  .deck-container .slide .h1 {
+    font-size: 2em !important; }
+  .deck-container .slide math {
+    font-size: 0.5em !important; }
+  .deck-container .slide > ul, .deck-container .slide > p ul {
+    font-size: 1.0em !important;
+    line-height: 1.2 !important; } }

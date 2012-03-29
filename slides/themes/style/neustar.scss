@@ -10,6 +10,16 @@ $light-grey: #888;
 	background-attachment: fixed;
 	background-position: bottom left;
 
+	.github-ribbon-container {
+		position: fixed;
+  		top: 0;
+  		right: 0;
+  		z-index: 3;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+
 	.slide {
 		background: transparent;
 
@@ -57,7 +67,7 @@ $light-grey: #888;
 
 		> ul, > p ul {
 			font-size: 1.2em;
-			line-height: 1.7;
+			line-height: 1.4;
 		}
 
 		blockquote {
@@ -146,6 +156,25 @@ $light-grey: #888;
 
 		.deck-current, .no-touch & .slide:hover {
 			background:#ddf;
+		}
+	}
+}
+
+@media print {
+	.deck-container {
+		.slide {
+			.h1 {
+				font-size: 2em !important;
+			}
+
+			math {
+				font-size: 0.5em !important;
+			}
+
+			> ul, > p ul {
+				font-size: 1.0em !important;
+				line-height: 1.2 !important;
+			}
 		}
 	}
 }
