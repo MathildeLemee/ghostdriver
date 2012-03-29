@@ -1,0 +1,55 @@
+CACHE MANIFEST
+
+# Time: Thu Mar 29 2012 22:52:38 GMT+0100 (BST)
+# This manifest was created by confess.js, http://github.com/jamesgpearce/confess
+#
+# Retrieved URL: http://detro.github.com/ghostdriver/slides/index.html
+# User-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#
+# Config:
+#  task: appcache
+#  userAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#  wait: 0
+#  consolePrefix: #
+#  verbose: true
+#  appcache:
+#   urlsFromDocument: true
+#   urlsFromRequests: false
+#   cacheFilter: .*
+#   networkFilter: null
+#  url: http://detro.github.com/ghostdriver/slides/index.html
+#  configFile: config.json
+
+CACHE:
+./core/deck.core.css
+./core/deck.core.js
+./extensions/codemirror/codemirror.js
+./extensions/codemirror/deck.codemirror.css
+./extensions/codemirror/deck.codemirror.js
+./extensions/codemirror/mode/clike/clike.js
+./extensions/codemirror/mode/javascript/javascript.js
+./extensions/codemirror/themes/default.css
+./extensions/goto/deck.goto.css
+./extensions/goto/deck.goto.js
+./extensions/hash/deck.hash.css
+./extensions/hash/deck.hash.js
+./extensions/menu/deck.menu.css
+./extensions/menu/deck.menu.js
+./extensions/navigation/deck.navigation.css
+./extensions/navigation/deck.navigation.js
+./extensions/status/deck.status.css
+./extensions/status/deck.status.js
+./images/busy-life.jpg
+./images/ghostdriver-architecture.png
+./images/ghostdriver-humor.jpg
+./images/github-topright-ribbon-green.png
+./images/phantom-ray.jpg
+./images/phantomjs-wordle.png
+./jquery-1.7.min.js
+./modernizr.custom.js
+./themes/style/neustar.css
+./themes/transition/vertical-slide.css
+http://detro.github.com/ghostdriver/slides/images/neustar-logo.png
+
+NETWORK:
+*
