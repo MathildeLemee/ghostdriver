@@ -48,35 +48,36 @@
 <!--2-->
 <section class="slide" id="who-am-i">
   <h2>Who is Ivan De Marino?</h2>
-  <ul>
-      <li>
-          <h3>Senior Engineer at Neustar</h3>
-          I lead the development for the Webmetrics Agent
-      </li>
-      <li>
-          <h3>(Main) contributor to <a href="http://phantomjs.org">PhantomJS</a></h3>
-          I worked on many things, and contributed stuff like the <strong>Filesystem API</strong> and recently the new <strong>REPL mode</strong>
-      </li>
-      <li>
-          <h3>Spend lots of my time</h3>
-          <ul>
-            <li><code><a href="http://github.com/detro">github.detro</a> = ivan.convert(italian_espresso || starbucks_espresso);</code></li>
-            <li><code><a href="http://twitter.com/detronizator">twitter.detronizator</a> = ivan.random_ranting(news || humor || experience || software || {});</code></li>
-            <li><code>food.italian = ivan.cook(recipe || random_ingredients);</code></li>
-            <li><code>detro.cycle(good_bike, good_gears).performance < semi_pro_cyclist(crap_bike, crap_gears).performance;</code></li>
-          </ul>
-      </li>
-      <li>
-          <h3>Few months that I started using Selenium</h3>
-          So, <em>go easy on me</em> ;-)
-      </li>
-  </ul>
+    <p>
+      <h3>Senior Engineer at Neustar</h3>
+      I lead the development for the Webmetrics Agent
+    </p>
+
+    <p>
+      <h3>(Main) contributor to <a href="http://phantomjs.org">PhantomJS</a></h3>
+      I worked on many things, and contributed stuff like the <strong>Filesystem API</strong> and recently the new <strong>REPL mode</strong>
+    </p>
+
+    <p>
+      <h3>Spend lots of my time</h3>
+      <ul>
+        <li><code><a href="http://github.com/detro">github.detro</a> = ivan.convert(italian_espresso || starbucks_espresso);</code></li>
+        <li><code><a href="http://twitter.com/detronizator">twitter.detronizator</a> = ivan.rant(news || humor || software || {});</code></li>
+        <li><code>food.italian = ivan.cook(recipe || random_ingredients);</code></li>
+        <li><code>detro.cycle(good_bike).performance < semi_pro_cyclist.performance;</code></li>
+      </ul>
+    </p>
+
+    <p>
+      <h3>Few months that I started using Selenium</h3>
+      So, <em>go easy on me</em> ;-)
+    </p>
 </section>
 
 <!--3-->
 <section class="slide" id="webmetrics-agent">
   <h2>Webmetrics Agent</h2>
-  My team is responsible for the <strong>(Super) Agent</strong>:
+  <h3>My team is responsible for the <em>(Super) Agent</em>:</h3>
   <ul>
     <li>Service that executes Customer Tests, leveraging Selenium and other projects</li>
     <li>Back-end component running on EC2, Rackspace, Voxel, ...</li>
@@ -84,7 +85,7 @@
     <li>Custom API mixed with Javascript-to-Selenium bridge</li>
     <li>Test Execution Speed is <strong>key</strong>: some customer scripts require <u>minutes</u> to run!</li>
   </ul>
-  <h3 class="slide" id="webmetrics-agent-hiring">We are Hiring!</h3>
+  <h3 class="slide" id="webmetrics-agent-hiring"><strong>We are Hiring!</strong></h3>
 </section>
 
 <!--4-->
@@ -103,11 +104,11 @@
     <img style="float: right;" src="images/phantomjs-wordle.png" width="600" alt="PhantomJS logo" />
   </p>
   <ul>
-    <li><h3>Headless (Qt)WebKit</h3></li>
-    <li><h3>JavaScript-driven: <strong>high hackability</strong></h3></li>
-    <li><h3>Ideal for Testing</h3></li>
+    <li>Headless (Qt)WebKit</li>
+    <li>JavaScript-driven: <strong>high hackability</strong></li>
+    <li>Ideal for Testing</li>
     <li>
-      <h3>Momentum</h3>
+      Momentum
       <ul>
         <li>Great Contributors</li>
         <li>Users and Feedbacks</li>
@@ -115,7 +116,7 @@
       </ul>
     </li>
     <li>
-      <h3>Integration</h3>
+      Integration
       <ul>
         <li>Poltergeist for Capybara, by Jon Leighton (<a href="https://github.com/jonleighton/poltergeist">github/poltergeist</a>)</li>
         <li>CasperJS, by Nicolas Perriault (<a href="http://casperjs.org/">casperjs.org</a>)</li>
@@ -158,6 +159,9 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 });</div>
     </div>
   </p>
+  <p>
+    Every party in HTTP communication is at hand
+  </p>
 </section>
 
 <!--8-->
@@ -173,11 +177,11 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 <section class="slide" id="phantomjs-fast">
   <h2>PhantomJS aims at being fast</h2>
   <ul>
-    <li><h3>Written in (good) Qt C++</h3></li>
-    <li><h3><code>no_UI === no_Drawing === low_memory_and_CPU_footprint</code></h3></li>
-    <li><h3>Very easy to get started (that's speed too!!!)</h3></li>
-    <li><h3>Whole test suite in ~2s on my 4yy old iMac</h3></li>
-    <li><h3>Maybe V8 in the future (depends on QtWebKit)</h3></li>
+    <li>Written in (good) Qt C++</li>
+    <li><code>no_UI === no_Drawing === low_memory_and_CPU_footprint</code></li>
+    <li>Very easy to get started (that's speed too!!!)</li>
+    <li>Whole test suite in ~2s on my 4yy old iMac</li>
+    <li>Maybe V8 in the future (depends on QtWebKit)</li>
   </ul>
 </section>
 
@@ -189,18 +193,24 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
     <img src="./images/busy-life.jpg" height="300"/>
     <span class="by">Busy Life, Bloor Street [<a href="http://www.torontosnaps.com/Monuments-and-sculptures/busy-life-11508.html">via</a>]</span>
   </h1>
+
 </section>
 
 <!--11-->
 <section class="slide" id="time-taken">
+  <h2>Time is usually interpreted as:</h2>
   <h1>
-    <math>
+    <math style="font-size: 1.3em;">
       <mrow>
-        <mi>Time to do Stuff</mi>
-        <mi>=</mi>
+        <mi>Time</mi>
+        <mo>=</mo>
         <mfrac>
-          <mrow>Stuff done</mrow>
-          <mrow>Speed of execution</mrow>
+          <mrow>
+            <mi>Distance</mi>
+          </mrow>
+          <mrow>
+            <mi>Speed</mi>
+          </mrow>
         </mfrac>
       </mrow>
     </math>
@@ -208,9 +218,196 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 </section>
 
 <!--12-->
-<section class="slide" id="need-for-speed">
+<section class="slide" id="need-speed">
   <h1>
     So, what we need is <em>SPEED</em>!
+  </h1>
+</section>
+
+<!--13-->
+<section class="slide" id="test-time">
+  <h2>How long does it take do a to test?</h2>
+  <h1>
+    <math>
+      <mrow style="font-size: 0.7em;">
+        <mi>test.coding.time</mi>
+        <mo>=</mo>
+        <mi>test.coding.update(platform.ease)</mi>
+      </mrow>
+      <mrow style="font-size: 0.7em;">
+        <mi>test.resul.time</mi>
+        <mo>=</mo>
+        <mi>test.exec(platform.speed, project.size)</mi>
+      </mrow>
+      <mrow>
+        <mi>test.time </mi>
+        <mo>&#x2248;</mo>
+        <msup style="color: red;">
+          <mi>0</mi>
+          <mn>i</mn>
+        </msup>
+        <mo>&#x2062;</mo> <!-- &InvisibleTimes; -->
+        <mi>test.coding.time</mi>
+        <mo>+</mo>
+        <mi style="color: red;">n</mi>
+        <mo>&#x2062;</mo> <!-- &InvisibleTimes; -->
+        <mi>test.result.time</mi>
+      </mrow>
+    </math>
+    <br />
+    <span class="slide" id="test-time-reduce" style="font-size: 0.8em;">Need to reduce <code style="color: red;">test.result.time</code></span>
+  </h1>
+</section>
+
+<!--14-->
+<section class="slide" id="google-cheese-test">
+  <h2>Classic example: "Google Cheese!" Test</h2>
+  <p>
+    <div>
+    <div class="code" mode="clike" style="display: none;">public class Example  {
+    public static void main(String[] args) {
+        WebDriver driver = new FirefoxDriver();
+
+        driver.get("http://www.google.com");                        // Load Google
+
+        WebElement element = driver.findElement(By.name("q"));      // Find the input box
+
+        element.sendKeys("Cheese!");                                // Type "Cheese!"
+
+        element.submit();                                           // Submit the form
+
+        System.out.println("Page title is: " + driver.getTitle());  // Print the Page title
+
+        driver.close();
+    }
+}</div>
+    </div>
+  </p>
+  <p>
+    <div class="slide" id="google-cheese-test-timings">
+      <div class="sidenote">
+        <p>
+          <h4>Test Hardware Specs</h4>
+          <ul>
+            <li>iMac late 2009</li>
+            <li>3.06 Ghz Intel Core Duo (2 x 64bit cores)</li>
+            <li>8GB of RAM</li>
+          </ul>
+        </p>
+      </div>
+      TODO
+      <ul>
+        <li><code>FirefoxDriver</code> takes an average of Xs</li>
+        <li><code>ChromeDriver</code> takes an average of Xs</li>
+        <li><code>HtmlUnitDriver</code> takes an average of Xs</li>
+        <li><code>InternetExplorerDriver</code>... I didn't bother checking :P</li>
+      </ul>
+    </div>
+  </p>
+</section>
+
+<!--15-->
+<section class="slide" id="google-cheese-test-demo">
+  <h1>
+    <em>Demo</em> TODO
+  </h1>
+</section>
+
+<!--16-->
+<section class="slide" id="not-good-for-coding-turnaround">
+  <h1>
+    Xs<br/> good <em>overnight tests</em> :)<br/> not so good <em>coding turnaround</em> :(
+  </h1>
+</section>
+
+<!--17-->
+<section class="slide" id="introducing-ghostdriver">
+  <h1>
+    GhostDriver
+    <br/>
+    <span class="by">
+      <a href="https://github.com/detro/ghostdriver">github/ghostdriver</a>
+    </span>
+  </h1>
+</section>
+
+<!--18-->
+<section class="slide" id="introducing-ghostdriver-picture">
+  <h1>
+    <img src="./images/ghostdriver-humor.jpg" />
+  </h1>
+</section>
+
+<!--19-->
+<section class="slide" id="whats-ghostdriver">
+  <h2>What's GhostDriver?</h2>
+  <p>
+    <ul>
+      <li>Implementation of <a href="http://code.google.com/p/selenium/wiki/JsonWireProtocol">WireProtocol</a> on PhantomJS</li>
+      <li>100% Javascript</li>
+      <li>Stress test for PhantomJS <code>require("webserver")</code> module</li>
+      <li>Most starred issue (<a href="http://code.google.com/p/phantomjs/issues/detail?id=49">#49</a>) on the <a href="http://code.google.com/p/phantomjs/issues/list">official PhantomJS tracker</a></li>
+      <li><code>RemoteWebDriver</code> Server</li>
+    </ul>
+  </p>
+</section>
+
+<!--20-->
+<section class="slide" id="ghostdriver-google-cheese-test">
+  <h2>GhostDriver vs. "Google Cheese!" Test?</h2>
+  <p>
+    <div>
+    <div class="code" mode="clike" style="display: none;">public class Example  {
+    public static void main(String[] args) {
+        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:8080"), cap);
+
+        driver.get("http://www.google.com");                        // Load Google
+
+        WebElement element = driver.findElement(By.name("q"));      // Find the input box
+
+        element.sendKeys("Cheese!");                                // Type "Cheese!"
+
+        element.submit();                                           // Submit the form
+
+        System.out.println("Page title is: " + driver.getTitle());  // Print the Page title
+
+        driver.close();
+    }
+}</div>
+    </div>
+  </p>
+  <p>
+    <div class="slide" id="ghostdriver-google-cheese-test-timings">
+      <div class="sidenote">
+        <p>
+          <h4>Test Hardware Specs</h4>
+          <ul>
+            <li>iMac late 2009</li>
+            <li>3.06 Ghz Intel Core Duo (2 x 64bit cores)</li>
+            <li>8GB of RAM</li>
+          </ul>
+        </p>
+      </div>
+      <ul>
+        <li><code>GhostDriver</code> takes an average of 2s (including start/shutdown)</li>
+        <li>~1s if PhantomJS kept running</li>
+        <li>Faster than switching to the console window!</li>
+      </ul>
+    </div>
+  </p>
+</section>
+
+<!--21-->
+<section class="slide" id="ghostdriver-demo">
+  <h1>
+    <em>Demo</em> TODO
+  </h1>
+</section>
+
+<!--22-->
+<section class="slide" id="ghostdriver-architecture">
+  <h1>
+    <img src="./images/ghostdriver-architecture.png" />
   </h1>
 </section>
 
@@ -253,6 +450,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 <!-- Base codemiror code -->
 <script src="./extensions/codemirror/codemirror.js"></script>
 <script src="./extensions/codemirror/mode/javascript/javascript.js"></script>
+<script src="./extensions/codemirror/mode/clike/clike.js"></script>
 <script src="./extensions/codemirror/deck.codemirror.js"></script>
 
 <!-- Initialize the deck -->

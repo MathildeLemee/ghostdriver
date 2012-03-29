@@ -11,7 +11,7 @@
     .deck-container .slide h1 {
       color: #008556;
       text-shadow: 0px 0px 2px #888888;
-      font-size: 5em; }
+      font-size: 4em; }
       .deck-container .slide h1 span.by {
         color: #888888;
         font-weight: normal;
@@ -22,6 +22,9 @@
         font-style: italic;
         font-size: 0.2em;
         text-shadow: none; }
+    .deck-container .slide math {
+      font-size: 0.5em;
+      font-family: monospace, sans-serif; }
     .deck-container .slide h2 {
       color: #008556;
       border-bottom-color: #ccc; }
@@ -31,8 +34,9 @@
       border-color: #ccc; }
     .deck-container .slide code {
       color: #888888; }
-    .deck-container .slide p, .deck-container .slide li {
-      font-size: 1.2em; }
+    .deck-container .slide > ul, .deck-container .slide > p ul {
+      font-size: 1.2em;
+      line-height: 1.7; }
     .deck-container .slide blockquote {
       font-size: 2em;
       font-style: italic;
@@ -46,6 +50,15 @@
         font-style: normal;
         font-weight: bold;
         color: #888888; }
+    .deck-container .slide .sidenote {
+      font-size: 0.8em;
+      float: right;
+      background: #efefef;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: block;
+      padding: 4px 15px;
+      max-width: 20%; }
     .deck-container .slide ::-moz-selection {
       background: #c00;
       color: #fff; }

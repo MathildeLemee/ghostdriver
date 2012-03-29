@@ -16,7 +16,7 @@ $light-grey: #888;
 		h1 {
 			color: $neustar-green;
 			text-shadow: 0px 0px 2px $light-grey;
-			font-size: 5em;
+			font-size: 4em;
 
 			span.by {
 				color: $light-grey;
@@ -31,6 +31,11 @@ $light-grey: #888;
 				font-size: 0.2em;
 				text-shadow: none;
 			}
+		}
+
+		math {
+			font-size: 0.5em;
+			font-family: monospace, sans-serif;
 		}
 
 		h2 {
@@ -50,8 +55,9 @@ $light-grey: #888;
 			color:$light-grey;
 		}
 
-		p, li {
+		> ul, > p ul {
 			font-size: 1.2em;
+			line-height: 1.7;
 		}
 
 		blockquote {
@@ -71,6 +77,17 @@ $light-grey: #888;
 				font-weight:bold;
 				color:$light-grey;
 			}
+		}
+
+		.sidenote {
+			font-size: 0.8em;
+			float: right;
+			background: #efefef;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			display: block;
+			padding: 4px 15px;
+			max-width: 20%;
 		}
 
 		::-moz-selection{ background:#c00; color:#fff; }
