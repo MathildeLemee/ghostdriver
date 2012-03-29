@@ -39,7 +39,7 @@
   </div>
 
 <!-- Begin slides -->
-<!--1-->
+
 <section class="slide" id="title">
   <h1>Speed Up Your Selenium Tests with PhantomJS
     <br/>
@@ -49,7 +49,7 @@
   </h1>
 </section>
 
-<!--2-->
+
 <section class="slide" id="who-am-i">
   <h2>Who is Ivan De Marino?</h2>
     <p>
@@ -78,7 +78,7 @@
     </p>
 </section>
 
-<!--3-->
+
 <section class="slide" id="webmetrics-agent">
   <h2>Webmetrics Agent</h2>
   <h3>My team is responsible for the <em>(Super) Agent</em>:</h3>
@@ -92,7 +92,7 @@
   <h3 class="slide" id="webmetrics-agent-hiring"><strong>We are Hiring!!!</strong></h3>
 </section>
 
-<!--4-->
+
 <section class="slide" id"phantomjs-intro">
   <h1>
     <img src="images/phantomjs-wordle.png" alt="PhantomJS logo" />
@@ -101,7 +101,7 @@
   </h1>
 </section>
 
-<!--5-->
+
 <section class="slide" id="phantomjs">
   <h2>PhantomJS: What's all the fuss about?</h2>
   <p>
@@ -131,12 +131,12 @@
   </ul>
 </section>
 
-<!--6-->
+
 <section class="slide" id="phantomjs-flexible-intro">
   <h1>FlExIbLe</h1>
 </section>
 
-<!--7-->
+
 <section class="slide" id="phantomjs-flexible">
   <h2>PhantomJS is flexible</h2>
   <p>
@@ -168,7 +168,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </p>
 </section>
 
-<!--8-->
+
 <section class="slide" id="phantomjs-fast-intro">
   <h1>
     <img src="./images/phantom-ray.jpg" />
@@ -177,7 +177,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </h1>
 </section>
 
-<!--9-->
+
 <section class="slide" id="phantomjs-fast">
   <h2>PhantomJS aims at being fast</h2>
   <ul>
@@ -189,7 +189,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </ul>
 </section>
 
-<!--10-->
+
 <section class="slide" id="question-value-time">
   <h1>
     How much do you <em>value</em> your time?
@@ -200,7 +200,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 
 </section>
 
-<!--11-->
+
 <section class="slide" id="time-taken">
   <h2>Time is usually interpreted as:</h2>
   <h1>
@@ -221,16 +221,16 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </h1>
 </section>
 
-<!--12-->
+
 <section class="slide" id="need-speed">
   <h1>
     So, what we need is <em>SPEED</em>!
   </h1>
 </section>
 
-<!--13-->
+
 <section class="slide" id="test-time">
-  <h2>How long does it take do a to test?</h2>
+  <h2>How long does it take do a test?</h2>
   <h1>
     <math>
       <mrow style="font-size: 0.7em;">
@@ -239,12 +239,12 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         <mi>test.coding.update(platform.ease)</mi>
       </mrow>
       <mrow style="font-size: 0.7em;">
-        <mi>test.resul.time</mi>
+        <mi>test.result.time</mi>
         <mo>=</mo>
         <mi>test.exec(platform.speed, project.size)</mi>
       </mrow>
       <mrow>
-        <mi>test.time </mi>
+        <mi>test.time</mi>
         <mo>&#x2248;</mo>
         <msup style="color: red;">
           <mi>0</mi>
@@ -258,12 +258,10 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         <mi>test.result.time</mi>
       </mrow>
     </math>
-    <br />
-    <span class="slide" id="test-time-reduce" style="font-size: 0.8em;">Need to reduce <code style="color: red;">test.result.time</code></span>
   </h1>
 </section>
 
-<!--14-->
+
 <section class="slide" id="google-cheese-test">
   <h2>Classic example: "Google Cheese!" Test</h2>
   <p>
@@ -299,7 +297,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
           </ul>
         </p>
       </div>
-      TODO
+      // TODO
       <ul>
         <li><code>FirefoxDriver</code> takes an average of Xs</li>
         <li><code>ChromeDriver</code> takes an average of Xs</li>
@@ -310,22 +308,29 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </p>
 </section>
 
-<!--15-->
+
 <section class="slide" id="google-cheese-test-demo">
   <h1>
-    <em>Demo</em> TODO
+    <em>Demo</em> // TODO
   </h1>
 </section>
 
-<!--16-->
+
+<section class="slide" id="test-time-reduce">
+  <h1>
+    We need to<br/> <code>reduce( <code style="color: red;">test.result.time</code> )</code>
+  </h1>
+</section>
+
+
 <section class="slide" id="not-good-for-coding-turnaround">
-  TODO
+  // TODO
   <h1>
     Xs<br/> is good <em>overnight tests</em>,<br/> but not so good <em>coding turnaround</em>
   </h1>
 </section>
 
-<!--17-->
+
 <section class="slide" id="introducing-ghostdriver">
   <h1>
     GhostDriver
@@ -336,14 +341,14 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </h1>
 </section>
 
-<!--18-->
+
 <section class="slide" id="introducing-ghostdriver-picture">
   <h1>
     <img src="./images/ghostdriver-humor.jpg" />
   </h1>
 </section>
 
-<!--19-->
+
 <section class="slide" id="whats-ghostdriver">
   <h2>What's GhostDriver?</h2>
   <p>
@@ -357,7 +362,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </p>
 </section>
 
-<!--20-->
+
 <section class="slide" id="ghostdriver-google-cheese-test">
   <h2>GhostDriver vs. "Google Cheese!" Test?</h2>
   <p>
@@ -381,7 +386,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 }</div>
     </div>
   </p>
-  TODO
+  // TODO
   <p>
     <div class="slide" id="ghostdriver-google-cheese-test-timings">
       <div class="sidenote">
@@ -403,21 +408,21 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </p>
 </section>
 
-<!--21-->
+
 <section class="slide" id="ghostdriver-demo">
   <h1>
-    <em>Demo</em> TODO
+    <em>Demo</em> // TODO
   </h1>
 </section>
 
-<!--22-->
+
 <section class="slide" id="ghostdriver-architecture">
   <h1>
     <img src="./images/ghostdriver-architecture.png" />
   </h1>
 </section>
 
-<!--23-->
+
 <section class="slide" id="ghostdriver-pros-and-cons">
   <h2>GhostDriver: Pros & Cons</h2>
   <h3>Pros</h3>
@@ -439,7 +444,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </ul>
 </section>
 
-<!--24-->
+
 <section class="slide" id="ghostdriver-project-status">
   <h2>GhostDriver: Project Status</h2>
   <ul>
@@ -460,7 +465,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </ul>
 </section>
 
-<!--25-->
+
 <section class="slide" id="q-and-a">
   <h1>
     Thanks!<br/> Questions?
