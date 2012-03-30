@@ -1,0 +1,83 @@
+###### 5 Samples / Start&Stop Drivers
+--------------------------------------
+*** STATS for Driver Type: 0
+*** Average Driver Start Time over 5 samples: 534
+*** Average Test Execution Time over 5 samples: 1995
+*** Total Execution Time over 5 samples: 2530
+--------------------------------------
+
+
+--------------------------------------
+*** STATS for Driver Type: 1
+*** Average Driver Start Time over 5 samples: 2756
+*** Average Test Execution Time over 5 samples: 2548
+*** Total Execution Time over 5 samples: 5304
+--------------------------------------
+
+
+--------------------------------------
+*** STATS for Driver Type: 2
+*** Average Driver Start Time over 5 samples: 846
+*** Average Test Execution Time over 5 samples: 2057
+*** Total Execution Time over 5 samples: 2904
+--------------------------------------
+
+
+###### 100 Samples / Start&Stop Drivers
+--------------------------------------
+*** STATS for Driver Type: GhostDriver + PhantomJS
+*** Average Driver Start Time over 100 samples: 447
+*** Average Test Execution Time over 100 samples: 905
+*** Total Execution Time over 100 samples: 1353
+--------------------------------------
+
+
+--------------------------------------
+*** STATS for Driver Type: FirefoxDriver + Firefox
+*** Average Driver Start Time over 100 samples: 1934
+*** Average Test Execution Time over 100 samples: 1146
+*** Total Execution Time over 100 samples: 3081
+--------------------------------------
+
+
+--------------------------------------
+*** STATS for Driver Type: ChromeDriver + Chrome
+*** Average Driver Start Time over 100 samples: 855
+*** Average Test Execution Time over 100 samples: 1336
+*** Total Execution Time over 100 samples: 2192
+--------------------------------------
+
+
+###### 5 Samples / Server
+GhostDriver
+--------------------------------------
+*** STATS
+*** Total Execution Time over 5 samples: 659
+--------------------------------------
+
+ChromeDriver
+--------------------------------------
+*** STATS
+*** Total Execution Time over 5 samples: 1727
+--------------------------------------
+
+
+###### 100 Samples / Server
+GhostDriver
+--------------------------------------
+*** STATS
+*** Total Execution Time over 100 samples: 703
+--------------------------------------
+real	1m12.455s
+user	0m7.122s
+sys	0m0.418s
+
+ChromeDriver
+--------------------------------------
+*** STATS
+*** Total Execution Time over 100 samples: 1667
+--------------------------------------
+
+real	2m48.741s
+user	0m6.576s
+sys	0m0.363s
