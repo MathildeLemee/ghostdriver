@@ -54,7 +54,7 @@
   <h2>Who is Ivan De Marino?</h2>
     <p>
       <h3>Senior Engineer at Neustar</h3>
-      I lead the development for the Webmetrics Agent
+      I lead the development for the <a href="http://www.webmetrics.com/">Webmetrics</a> Agent
     </p>
 
     <p>
@@ -93,9 +93,9 @@
 </section>
 
 
-<section class="slide" id"phantomjs-intro">
+<section class="slide" id="phantomjs-intro">
   <h1>
-    <img src="./images/phantomjs-wordle.png" alt="PhantomJS logo" />
+    <img src="./images/phantomjs-wordle.png" alt="PhantomJS logo" width="800" />
     <br />
     <span class="by"><a href="http://www.wordle.net">via Wordle</a></span>
   </h1>
@@ -110,7 +110,13 @@
   <ul>
     <li>Headless (Qt)WebKit</li>
     <li>JavaScript-driven: <strong>high hackability</strong></li>
-    <li>Ideal for Testing</li>
+    <li>
+      Ideal for Testing
+      <ul>
+        <li><code>pre-commit hook</code></li>
+        <li>headless is <em>cloud-friendly</em></li>
+      </ul>
+    </li>
     <li>
       Momentum
       <ul>
@@ -120,13 +126,10 @@
       </ul>
     </li>
     <li>
-      Integration
-      <ul>
-        <li>Poltergeist for Capybara, by Jon Leighton (<a href="https://github.com/jonleighton/poltergeist">github/poltergeist</a>)</li>
-        <li>CasperJS, by Nicolas Perriault (<a href="http://casperjs.org/">casperjs.org</a>)</li>
-        <li>PhantomJS YUI Test, by Liam Clancy (<a href="https://github.com/metafeather/phantomjs-yuitest">github/phantomjs-yuitest</a>)
-        <li>Many other (<a href="http://code.google.com/p/phantomjs/wiki/WhoUsesPhantomJS">the full list</a>)
-      </ul>
+      Integration:
+      <a href="https://github.com/jonleighton/poltergeist">Poltergeist</a>, 
+      <a href="http://casperjs.org/">CasperJS</a>
+      and <strong>many <a href="http://code.google.com/p/phantomjs/wiki/WhoUsesPhantomJS">more</a></strong>
     </li>
   </ul>
 </section>
@@ -232,13 +235,13 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 <section class="slide" id="test-time">
   <h2>How long does it take do a test?</h2>
   <h1>
-    <math>
-      <mrow style="font-size: 0.7em;">
+    <math style="font-size: 35%;">
+      <mrow>
         <mi>test.coding.time</mi>
         <mo>=</mo>
         <mi>test.coding.update(platform.ease)</mi>
       </mrow>
-      <mrow style="font-size: 0.7em;">
+      <mrow>
         <mi>test.result.time</mi>
         <mo>=</mo>
         <mi>test.exec(platform.speed, project.size)</mi>
@@ -291,17 +294,15 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         <p>
           <h4>Test Hardware Specs</h4>
           <ul>
-            <li>iMac late 2009</li>
-            <li>3.06 Ghz Intel Core Duo (2 x 64bit cores)</li>
-            <li>8GB of RAM</li>
+            <li>MacBook Pro late 2011</li>
+            <li>2.2 GHz Intel Core i7</li>
+            <li>8 GB 1333 MHz DDR3</li>
           </ul>
         </p>
       </div>
-      // TODO
       <ul>
-        <li><code>FirefoxDriver</code> takes an average of Xs</li>
-        <li><code>ChromeDriver</code> takes an average of Xs</li>
-        <li><code>HtmlUnitDriver</code> takes an average of Xs</li>
+        <li><code>FirefoxDriver</code> takes an average of 5.3s</li>
+        <li><code>ChromeDriver</code> takes an average of 2.9s</li>
         <li><code>InternetExplorerDriver</code>... I didn't bother checking :P</li>
       </ul>
     </div>
@@ -309,24 +310,16 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 </section>
 
 
-<section class="slide" id="google-cheese-test-demo">
-  <h1>
-    <em>Demo</em> // TODO
-  </h1>
-</section>
-
-
 <section class="slide" id="test-time-reduce">
   <h1>
-    We need to<br/> <code>reduce( <code style="color: red;">test.result.time</code> )</code>
+    We need to<br/> <code style="font-size: 0.7em;">reduce( <code style="color: red;">test.result.time</code> )</code>
   </h1>
 </section>
 
 
 <section class="slide" id="not-good-for-coding-turnaround">
-  // TODO
-  <h1>
-    Xs<br/> is good <em>overnight tests</em>,<br/> but not so good <em>coding turnaround</em>
+  <h1 style="font-size: 2.5em;">
+    2-3s<br/> is good for <em>overnight tests</em>,<br/> but not so good as <em>coding turnaround</em>
   </h1>
 </section>
 
@@ -386,23 +379,22 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 }</div>
     </div>
   </p>
-  // TODO
   <p>
     <div class="slide" id="ghostdriver-google-cheese-test-timings">
       <div class="sidenote">
         <p>
           <h4>Test Hardware Specs</h4>
           <ul>
-            <li>iMac late 2009</li>
-            <li>3.06 Ghz Intel Core Duo (2 x 64bit cores)</li>
-            <li>8GB of RAM</li>
+            <li>MacBook Pro late 2011</li>
+            <li>2.2 GHz Intel Core i7</li>
+            <li>8 GB 1333 MHz DDR3</li>
           </ul>
         </p>
       </div>
       <ul>
-        <li><code>GhostDriver</code> takes an average of 2s (including start/shutdown)</li>
-        <li>~1s if PhantomJS kept running</li>
-        <li>Faster than switching to the console window!</li>
+        <li><code>GhostDriver</code> takes an average of 1/2s (including start/shutdown)</li>
+        <li><strong>~0.5s if PhantomJS is kept running</strong></li>
+        <li>Faster than switching from the editor to the console!</li>
       </ul>
     </div>
   </p>
@@ -411,31 +403,50 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 
 <section class="slide" id="ghostdriver-demo">
   <h1>
-    <em>Demo</em> // TODO
+    <em>Demo</em>
+    <br />
+    <span class="by"><code>mvnexec.sh</code> & <code>mvnexec-server.sh</code></span>
   </h1>
+</section>
+
+
+<section class="slide" id="stats-startstop">
+  <h2>Timing when starting/stopping the Driver</h2>
+  <div class="vcenter">
+    <img src="./images/stats-startstop.png" />
+  </div>
+</section>
+
+
+<section class="slide" id="stats-server">
+  <h2>Timing when in server mode</h2>
+  <div class="vcenter">
+    <img src="./images/stats-server.png" />
+  </div>
 </section>
 
 
 <section class="slide" id="ghostdriver-architecture">
-  <h1>
-    <img src="./images/ghostdriver-architecture.png" />
-  </h1>
+  <div class="vcenter">
+    <img src="./images/ghostdriver-architecture.png"/>
+  </div>
 </section>
 
 
 <section class="slide" id="ghostdriver-pros-and-cons">
-  <h2>GhostDriver: Pros & Cons</h2>
+  <h2>PhantomJS + GhostDriver: Pros & Cons</h2>
   <h3>Pros</h3>
   <ul>
     <li>Fast Test Results => Faster Coding Turnaround</li>
-    <li>Easy Setup: store it in your Repo
+    <li>Enhanced dev environment
       <ul>
-        <li>PhantomJS ~10/15Mb</li>
-        <li>GhostDriver ~0.2Mb</li>
+        <li>store it in your repo for easy setup (max ~15MB of binary)</li>
+        <li>launch Selenium tests in your <code>pre-commit hook</code></li>
+        <li>headless is <em>cloud-friendly</em></li>
       </ul>
     </li>
     <li>Hackable and Tunable (JavaScript / C++)</li>
-    <li>Multiple Sessions without a glitch</li>
+    <li><strong>VERY FAST</strong> in Server configuration</li>
   </ul>
   <h3>Cons</h3>
   <ul>
@@ -449,9 +460,9 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   <h2>GhostDriver: Project Status</h2>
   <ul>
     <li>Not ready for production</li>
-    <li>Project just started (<strong>only 1 week</strong> of solid coding)</li>
-    <li>Help! FORK and HACK with me</li>
-    <li>Neustar Webmetrics will offer it</li>
+    <li>Project just started (<strong>only 1 week</strong> of real, solid coding)</li>
+    <li><strong>Help!</strong> FORK and HACK with me</li>
+    <li>Part of future <strong><a href="http://www.webmetrics.com/">Neustar Webmetrics</a> offering</strong></li>
     <li>Imporant items in the TODO list:
       <ul>
         <li>Multiple Frames per Window</li>
