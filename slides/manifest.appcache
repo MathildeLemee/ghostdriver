@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Thu Mar 29 2012 22:52:38 GMT+0100 (BST)
+# Time: Mon Apr 02 2012 10:06:23 GMT-0500 (CDT)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://detro.github.com/ghostdriver/slides/index.html
@@ -45,6 +45,8 @@ CACHE:
 ./images/github-topright-ribbon-green.png
 ./images/phantom-ray.jpg
 ./images/phantomjs-wordle.png
+./images/stats-server.png
+./images/stats-startstop.png
 ./jquery-1.7.min.js
 ./modernizr.custom.js
 ./themes/style/neustar.css
