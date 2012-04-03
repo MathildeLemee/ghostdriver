@@ -59,7 +59,7 @@
 
     <p>
       <h3>(Main) contributor to <a href="http://phantomjs.org">PhantomJS</a></h3>
-      I worked on many things, and contributed stuff like the <strong>Filesystem API</strong> and recently the new <strong>REPL mode</strong>
+      I have worked on many things and contributed things like the <strong>Filesystem API</strong> and recently, the new <strong>REPL mode</strong>
     </p>
 
     <p>
@@ -120,9 +120,9 @@
     <li>
       Momentum
       <ul>
-        <li>Great Contributors</li>
-        <li>Users and Feedbacks</li>
-        <li>Regular Releases</li>
+        <li>Great contributors</li>
+        <li>Users and feedbacks</li>
+        <li>Regular releases</li>
       </ul>
     </li>
     <li>
@@ -136,7 +136,7 @@
 
 
 <section class="slide" id="phantomjs-flexible-intro">
-  <h1>FlExIbLe</h1>
+  <h1>fLeXibLe</h1>
 </section>
 
 
@@ -167,7 +167,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
     </div>
   </p>
   <p>
-    (Almost) every party in HTTP communication is at hand!
+    <em>Every thing you need in 20 lines!</em>
   </p>
 </section>
 
@@ -186,8 +186,8 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   <ul>
     <li>Written in (good) Qt C++</li>
     <li><code>no_UI === no_Drawing === low_memory_and_CPU_footprint</code></li>
-    <li>Very easy to get started (that's speed too!!!)</li>
-    <li>Whole test suite in ~2s on my 4yy old iMac</li>
+    <li>Very easy to get started (that counts as <em>speed</em> too!!!)</li>
+    <li>Whole test suite in ~2s on my 4yo iMac</li>
     <li>Maybe V8 in the future (depends on QtWebKit)</li>
   </ul>
 </section>
@@ -227,7 +227,9 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 
 <section class="slide" id="need-speed">
   <h1>
-    So, what we need is <em>SPEED</em>!
+    So what we need is <em>SPEED</em>!
+    <br>
+    <span class="by">... or less Distance :) (<em>John Bower</em>, a very wise man)</span>
   </h1>
 </section>
 
@@ -239,7 +241,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
       <mrow>
         <mi>test.coding.time</mi>
         <mo>=</mo>
-        <mi>test.coding.update(platform.ease)</mi>
+        <mi>test.coding.write(platform.ease)</mi>
       </mrow>
       <mrow>
         <mi>test.result.time</mi>
@@ -270,7 +272,9 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   <p>
     <div>
     <div class="code" mode="clike" style="display: none;">public class Example  {
+
     public static void main(String[] args) {
+
         WebDriver driver = new FirefoxDriver();
 
         driver.get("http://www.google.com");                        // Load Google
@@ -284,6 +288,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         System.out.println("Page title is: " + driver.getTitle());  // Print the Page title
 
         driver.close();
+
     }
 }</div>
     </div>
@@ -301,8 +306,8 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         </p>
       </div>
       <ul>
-        <li><code>FirefoxDriver</code> takes an average of 5.3s</li>
-        <li><code>ChromeDriver</code> takes an average of 2.9s</li>
+        <li><code>FirefoxDriver</code> ~= average of 5.3s</li>
+        <li><code>ChromeDriver</code> ~= average of 2.9s</li>
         <li><code>InternetExplorerDriver</code>... I didn't bother checking :P</li>
       </ul>
     </div>
@@ -319,7 +324,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 
 <section class="slide" id="not-good-for-coding-turnaround">
   <h1 style="font-size: 2.5em;">
-    2-3s<br/> is good for <em>overnight tests</em>,<br/> but not so good as <em>coding turnaround</em>
+    2-3s<br/> is good for <em>overnight tests</em>,<br/> but not so good for <em>coding turnaround</em>
   </h1>
 </section>
 
@@ -361,7 +366,9 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   <p>
     <div>
     <div class="code" mode="clike" style="display: none;">public class Example  {
+
     public static void main(String[] args) {
+
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:8080"), cap);
 
         driver.get("http://www.google.com");                        // Load Google
@@ -375,6 +382,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         System.out.println("Page title is: " + driver.getTitle());  // Print the Page title
 
         driver.close();
+
     }
 }</div>
     </div>
@@ -392,8 +400,8 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         </p>
       </div>
       <ul>
-        <li><code>GhostDriver</code> takes an average of 1/2s (including start/shutdown)</li>
-        <li><strong>~0.5s if PhantomJS is kept running</strong></li>
+        <li><code>GhostDriver</code> ~= average of 1/2s (including start/shutdown)</li>
+        <li><strong>0.5s if PhantomJS is kept running</strong></li>
         <li>Faster than switching from the editor to the console!</li>
       </ul>
     </div>
@@ -426,18 +434,11 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 </section>
 
 
-<section class="slide" id="ghostdriver-architecture">
-  <div class="vcenter">
-    <img src="./images/ghostdriver-architecture.png"/>
-  </div>
-</section>
-
-
 <section class="slide" id="ghostdriver-pros-and-cons">
   <h2>PhantomJS + GhostDriver: Pros & Cons</h2>
   <h3>Pros</h3>
   <ul>
-    <li>Fast Test Results => Faster Coding Turnaround</li>
+    <li>Fast test results => faster coding turnaround</li>
     <li>Enhanced dev environment
       <ul>
         <li>store it in your repo for easy setup (max ~15MB of binary)</li>
@@ -445,13 +446,13 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         <li>headless is <em>cloud-friendly</em></li>
       </ul>
     </li>
-    <li>Hackable and Tunable (JavaScript / C++)</li>
-    <li><strong>VERY FAST</strong> in Server configuration</li>
+    <li>Hackable and tunable (JavaScript / C++)</li>
+    <li><strong>VERY FAST</strong> in server configuration</li>
   </ul>
   <h3>Cons</h3>
   <ul>
-    <li>PhantomJS ~= Real Browser</li>
-    <li>Only 13 of of 95 Wire Protocol Commands implemented (13.68%)</li>
+    <li>PhantomJS ~= real browser</li>
+    <li>Only 13 of of 95 Wire Protocol commands implemented (13.68%)</li>
   </ul>
 </section>
 
@@ -462,7 +463,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
     <li>Not ready for production</li>
     <li>Project just started (<strong>only 1 week</strong> of real, solid coding)</li>
     <li><strong>Help!</strong> FORK and HACK with me</li>
-    <li>Part of future <strong><a href="http://www.webmetrics.com/">Neustar Webmetrics</a> offering</strong></li>
+    <li>Future <strong><a href="http://www.webmetrics.com/">Neustar Webmetrics</a> offering</strong></li>
     <li>Imporant items in the TODO list:
       <ul>
         <li>Multiple Frames per Window</li>
@@ -487,6 +488,14 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
     </span>
   </h1>
 </section>
+
+
+<section class="slide" id="ghostdriver-architecture">
+  <div class="vcenter">
+    <img src="./images/ghostdriver-architecture.png"/>
+  </div>
+</section>
+
 
 <!-- ================================================================= END OF SLIDES -->
 
