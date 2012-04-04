@@ -54,42 +54,42 @@
   <h2>Who is Ivan De Marino?</h2>
     <p>
       <h3>Senior Engineer at Neustar</h3>
-      I lead the development for the <a href="http://www.webmetrics.com/">Webmetrics</a> Agent
+      I lead the development for the <a href="https://home.wpm.neustar.biz/">Neustar Web Perfomance Management</a> Agent
     </p>
 
     <p>
-      <h3>(Main) contributor to <a href="http://phantomjs.org">PhantomJS</a></h3>
-      I have worked on many things and contributed things like the <strong>Filesystem API</strong> and recently, the new <strong>REPL mode</strong>
+      <h3>Contributor to <a href="http://phantomjs.org">PhantomJS</a></h3>
+      Worked on many parts and contributed things like <strong>Filesystem API</strong> and recently, <strong>REPL mode</strong>
     </p>
 
     <p>
       <h3>Spend lots of my time</h3>
-      <ul>
+      <ul style="font-size: 1em;">
         <li><code><a href="http://github.com/detro">github.detro</a> = ivan.convert(italian_espresso || starbucks_espresso);</code></li>
         <li><code><a href="http://twitter.com/detronizator">twitter.detronizator</a> = ivan.rant(news || humor || software || {});</code></li>
-        <li><code>food.italian = ivan.cook(recipe || random_ingredients);</code></li>
-        <li><code>detro.cycle(good_bike).performance < semi_pro_cyclist.performance;</code></li>
+        <li><code>food = ivan.italian.cook(recipe || random_ingredients);</code></li>
+        <li><code>ivan.cycle(good_bike).performance < semi_pro_cyclist.performance;</code></li>
       </ul>
     </p>
 
     <p>
-      <h3>Few months that I started using Selenium</h3>
+      <h3>Only used Selenium for a few months</h3>
       So, <em>go easy on me</em> ;-)
     </p>
 </section>
 
 
-<section class="slide" id="webmetrics-agent">
-  <h2>Webmetrics Agent</h2>
-  <h3>My team is responsible for the <em>(Super) Agent</em>:</h3>
+<section class="slide" id="wpm-agent">
+  <h2>Neustar WPM Agent</h2>
+  <h3>My team is responsible for the <em>"Super" Agent</em>:</h3>
   <ul>
     <li>Service that executes Customer Tests, leveraging Selenium and other projects</li>
     <li>Back-end component running on EC2, Rackspace, Voxel, ...</li>
     <li>Tests written in Javascript</li>
     <li>Custom API mixed with Javascript-to-Selenium bridge</li>
-    <li>Test Execution Speed is <strong>key</strong>: some customer scripts require <u>minutes</u> to run!</li>
+    <li>Test Execution Speed is <strong>key</strong> measurment: some customer scripts require <u>minutes</u> to run!</li>
   </ul>
-  <h3 class="slide" id="webmetrics-agent-hiring"><strong>We are Hiring!!!</strong></h3>
+  <h3 class="slide" id="wpm-agent-hiring"><strong>We are Hiring!!!</strong></h3>
 </section>
 
 
@@ -112,17 +112,17 @@
     <li>JavaScript-driven: <strong>high hackability</strong></li>
     <li>
       Ideal for Testing
-      <ul>
+      <ul style="font-size: 0.9em;">
         <li><code>pre-commit hook</code></li>
         <li>headless is <em>cloud-friendly</em></li>
       </ul>
     </li>
     <li>
       Momentum
-      <ul>
-        <li>Great contributors</li>
-        <li>Users and feedbacks</li>
+      <ul style="font-size: 0.9em;">
+        <li>Many users and feedbacks</li>
         <li>Regular releases</li>
+        <li>Thanks to <a href="http://ariya.ofilabs.com/">Ariya Hidayat</a> (Project Leader)</li>
       </ul>
     </li>
     <li>
@@ -193,6 +193,17 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 </section>
 
 
+<section class="slide" id="phantomjs-cons">
+  <h2>PhantomJS does have (some) drawbacks</h2>
+  <ul>
+    <li>Only <strong>WebKit</strong> engine (for now...)</li>
+    <li><code>QtWebKit != Safari != Chrome != MOBILE_OS_HERE</code></li>
+    <li><strong>Asynchronous API</strong>: not everyone's cup of tea</li>
+    <li>Limited/No plugin support (working on a solution)</li>
+  </ul>
+</section>
+
+
 <section class="slide" id="question-value-time">
   <h1>
     How much do you <em>value</em> your time?
@@ -227,9 +238,14 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 
 <section class="slide" id="need-speed">
   <h1>
-    So what we need is <em>SPEED</em>!
+    So what we need is
+    <br/><em>SPEED</em>!
     <br>
-    <span class="by">... or less Distance :) (<em>John Bower</em>, a very wise man)</span>
+    <span class="by">
+      <em>"... or less Distance!"</em>
+      <br />
+      John Bower
+    </span>
   </h1>
 </section>
 
@@ -463,7 +479,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
     <li>Not ready for production</li>
     <li>Project just started (<strong>only 1 week</strong> of real, solid coding)</li>
     <li><strong>Help!</strong> FORK and HACK with me</li>
-    <li>Future <strong><a href="http://www.webmetrics.com/">Neustar Webmetrics</a> offering</strong></li>
+    <li>Future <strong><a href="https://home.wpm.neustar.biz/">Neustar WPM</a> offering</strong></li>
     <li>Imporant items in the TODO list:
       <ul>
         <li>Multiple Frames per Window</li>
@@ -483,14 +499,16 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
     Thanks!<br/> Questions?
     <br />
     <span class="by">
-      <a href="http://github.com/detro/ghostdriver">http://github.com/detro/ghostdriver</a> -
-      <a href="http://github.com/ariya/phantomjs">http://github.com/ariya/phantomjs</a>
+      <a href="http://github.com/detro/ghostdriver">github/detro/ghostdriver</a>
+      -
+      <a href="http://github.com/ariya/phantomjs">github/ariya/phantomjs</a>
     </span>
   </h1>
 </section>
 
 
 <section class="slide" id="ghostdriver-architecture">
+  <h2>Appendix: A bit of Architecture</h2>
   <div class="vcenter">
     <img src="./images/ghostdriver-architecture.png"/>
   </div>
