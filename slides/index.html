@@ -322,8 +322,8 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         </p>
       </div>
       <ul>
-        <li><code>FirefoxDriver</code> ~= average of 5.3s</li>
-        <li><code>ChromeDriver</code> ~= average of 2.9s</li>
+        <li><code>FirefoxDriver</code> &#x2248; average of 5.3s</li>
+        <li><code>ChromeDriver</code> &#x2248; average of 2.9s</li>
         <li><code>InternetExplorerDriver</code>... I didn't bother checking :P</li>
       </ul>
     </div>
@@ -340,7 +340,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
 
 <section class="slide" id="not-good-for-coding-turnaround">
   <h1 style="font-size: 2.5em;">
-    2-3s<br/> is good for <em>overnight tests</em>,<br/> but not so good for <em>coding turnaround</em>
+    3~5s<br/> is good for <em>overnight tests</em>,<br/> but not so good for <em>coding turnaround</em>
   </h1>
 </section>
 
@@ -416,7 +416,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
         </p>
       </div>
       <ul>
-        <li><code>GhostDriver</code> ~= average of 1/2s (including start/shutdown)</li>
+        <li><code>GhostDriver</code> &#x2248; average of 1/2s (including start/shutdown)</li>
         <li><strong>0.5s if PhantomJS is kept running</strong></li>
         <li>Faster than switching from the editor to the console!</li>
       </ul>
@@ -467,7 +467,7 @@ page.open("http://localhost:" + port + "/foo/bar.php?asdf=true", function (statu
   </ul>
   <h3>Cons</h3>
   <ul>
-    <li>PhantomJS ~= real browser</li>
+    <li>PhantomJS &#x2248; real browser</li>
     <li>Only 13 of of 95 Wire Protocol commands implemented (13.68%)</li>
   </ul>
 </section>
