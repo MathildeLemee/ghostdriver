@@ -2,132 +2,107 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>
-      detro/ghostdriver @ GitHub
-    </title>
-    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>GhostDriver by detro</title>
   </head>
+
   <body>
-    <a href="https://github.com/detro/ghostdriver"><img style=
-    "position: absolute; top: 0; right: 0; border: 0;" src=
-    "http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
-    alt="Fork me on GitHub"></a>
-    <div id="container">
-      <div class="download">
-        <a href=
-        "https://github.com/detro/ghostdriver/zipball/master"><img border="0"
-        width="90" src=
-        "https://github.com/images/modules/download/zip.png"></a>
-        <a href=
-        "https://github.com/detro/ghostdriver/tarball/master"><img border="0"
-        width="90" src=
-        "https://github.com/images/modules/download/tar.png"></a>
+
+    <header>
+      <div class="container">
+        <h1>GhostDriver</h1>
+        <h2>Ghost Driver is an implementation of the Remote WebDriver Wire protocol, using PhantomJS as back-end</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/detro/ghostdriver/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/detro/ghostdriver/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/detro/ghostdriver" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
       </div>
-      <h1>
-        <a href="https://github.com/detro/ghostdriver">GhostDriver</a>
-        <span class="small">by <a href="https://github.com/detro">detro</a></span>
-      </h1>
-      <div class="description">
-        Ghost Driver is an implementation of the Remote WebDriver
-        Wire protocol, using PhantomJS as back-end
-      </div>
-      <h2>
-        Dependencies
-      </h2>
-      <p>
-        <ul>
-          <li><a href="http://phantomjs.org">PhantomJS</a> <code>&gt;= v1.5</code></li>
-          <li><a href="http://maven.apache.org/">Maven</a> (only to run the <a href="http://seleniumhq.org/">Selenium</a> examples)</li>
-        </ul>
-      </p>
-      <h2>
-        Start with an example
-      </h2>
-      <p>
-        There is plenty to do before this is usable, but if you can't wait to try PhantomJS's speed when it acts as a RemoteWebDriver Server, do the following:
+    </header>
 
-        <ul>
-          <li>Start GhostDriver on a terminal:<br/>
-<pre>
-  $ phantomjs ghostdriver/main.js
-  Ghost Driver running on port 8080
-</pre>
-          </li>
-          <li>Build and Launch the first Java-based example (Maven required):<br/>
-<pre>
-  $ cd ghostdriver/examples/google_cheese/
-  $ ./mvnexec.sh ghostdriver
-  ...
-  [INFO] Building ghostdriver 1.0
-  [INFO] ------------------------------------------------------------------------
-  [INFO]
-  [INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) @ google_cheese >>>
-  [INFO]
-  [INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) @ google_cheese <<<
-  [INFO]
-  [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ google_cheese ---
-  *** USING GHOSTDRIVER ***
-  Loading 'http://www.google.com'...
-  Loaded. Current URL is: 'http://www.google.co.uk/'
-  Finding an Element via [name='q']...
-  Found.
-  Sending keys 'Cheese!...'
-  Sent.
-  Submitting Element...
-  Submitted.
-  Page title is: Cheese! - Google Search
-  Time elapsed (ms): 1531
-  [INFO] ------------------------------------------------------------------------
-  [INFO] BUILD SUCCESS
-  ...
-</pre>
-          </li>
-          <li>Enjoy!</li>
-        </ul>
+    <div class="container">
+      <section id="main_content">
+        <h3>Forewords</h3>
 
-      For a quick speed comparison with other WebDriver implementations, try passing the parameter <code>firefox</code> or <code>chrome</code> to the <code>./mvnexec.sh</code> script.
-      </p>
+<p>As it stands now, GhostDriver is a technical-demo. I worked on this 1 week and the idea is to present it to the <a href="http://www.seleniumconf.org/speakers/#IDM">Selenium Conference 2012</a>. It's not usable as a normal WebDriver yet, but it will be in the foreseeable future.</p>
 
-      <h2>Slides</h2>
-      <p>
-        <a href="./slides/index.html">Slides for the Selenium Conference 2012</a>.
-      </p>
+<h3>Important, please read</h3>
 
-      <h2>
-        Author
-      </h2>
-      <p>
-        Ivan De Marino (<a href="http://twitter.com/detronizator">@detronizator</a> - <a href="http://github.com/detro">github/detro</a>)
-      </p>
-      <h2>
-        Download
-      </h2>
-      <p>
-        You can download this project in either <a href=
-        "https://github.com/detro/ghostdriver/zipball/master">zip</a>
-        or <a href=
-        "https://github.com/detro/ghostdriver/tarball/master">tar</a>
-        formats.
-      </p>
-      <p>
-        You can also clone the project with <a href=
-        "http://git-scm.com">Git</a> by running:
-      </p>
-<pre>
-  $ git clone git://github.com/detro/ghostdriver
-</pre>
-      <div class="footer">
-        get the source code on GitHub : <a href=
-        "https://github.com/detro/ghostdriver">detro/ghostdriver</a>
-      </div>
-    </div><script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type="text/javascript">
-try {
-    var pageTracker = _gat._getTracker("UA-136869-10");
-    pageTracker._trackPageview();
-    } catch(err) {}
-    </script>
+<ol>
+<li>IT'S NOT DONE! The only commands implemented are the one used by the examples/google_cheese/ directory</li>
+<li>It's still experimental</li>
+<li>Not ready for Production</li>
+<li>Only 13 of the &gt;90 WireProtocol Commands implemented</li>
+<li>I released it to get people interested in contributing. Not to provide a solution: it's not ready yet!</li>
+</ol><hr><h3>Example (the only available so far :) )</h3>
+
+<p>There is plenty to do before this is usable, but if you can't wait to try PhantomJS's speed when it acts as a RemoteWebDriver Server, do the following:</p>
+
+<p>1) Start GhostDriver on the terminal</p>
+
+<pre><code>$ phantomjs ghostdriver/main.js
+Ghost Driver running on port 8080
+</code></pre>
+
+<p>2) Build and Launch the first Java-based example (Maven required):</p>
+
+<pre><code>$ cd ghostdriver/examples/google_cheese/
+$ ./mvnexec-server-online.sh ghostdriver
+...
+[INFO] Building ghostdriver 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] &gt;&gt;&gt; exec-maven-plugin:1.2.1:java (default-cli) @ google_cheese &gt;&gt;&gt;
+[INFO]
+[INFO] &lt;&lt;&lt; exec-maven-plugin:1.2.1:java (default-cli) @ google_cheese &lt;&lt;&lt;
+[INFO]
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ google_cheese ---
+*** USING GHOSTDRIVER ***
+Loading '<a href="http://www.google.com">http://www.google.com</a>'...
+Loaded. Current URL is: '<a href="http://www.google.co.uk/">http://www.google.co.uk/</a>'
+Finding an Element via [name='q']...
+Found.
+Sending keys 'Cheese!...'
+Sent.
+Submitting Element...
+Submitted.
+Page title is: Cheese! - Google Search
+Time elapsed (ms): 1531
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+...
+</code></pre>
+
+<p>3) Checkout the code: this is not a finished product, so you NEED to get your hands dirty!</p>
+
+<p>For a quick speed comparison with other WebDriver implementations, try passing the parameter <code>firefox</code> or <code>chrome</code> to the <code>mvnexec.sh</code> script. </p>
+
+<h3>Slides</h3>
+
+<p>Here are the <a href="http://detro.github.com/ghostdriver/slides/index.html">Slides</a> that <a href="https://github.com/detro" class="user-mention">@detro</a> will present at the <a href="http://www.seleniumconf.org/speakers/#IDM">Selenium Conference 2012</a>.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>Main author is Ivan De Marino (<a href="https://github.com/detro" class="user-mention">@detro</a>), but he is looking for contribution and help to make GhostDriver a fully functional solution.</p>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-136869-10");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
